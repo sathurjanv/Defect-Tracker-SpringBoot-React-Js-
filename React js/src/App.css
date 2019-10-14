@@ -1,0 +1,85 @@
+@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.s-alert-box {
+  min-width: 250px;
+}
+
+.s-alert-close::before,
+.s-alert-close::after {
+  width: 2px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* sidebar design */
+#sidebar {
+  margin-top: 0%;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: rgb(160, 160, 243);
+  top: 50px;
+
+  transition: all 500ms linear;
+}
+
+/* sidebar view */
+#sidebar.active {
+  left: 0px;
+}
+
+/* sidebar  contant design  */
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 25px 20px;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.3);
+}
+
+/* Toggle btn design */
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 210px;
+  top: 20px;
+}
+
+#sidebar .toggle-btn span {
+  color: white;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #151719;
+  margin: 5px 0px;
+}
